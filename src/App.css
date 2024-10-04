@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for the entire document */
+}
+
+
+.sidebar {
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh; /* Full height */
+  background-color: #f4f4f4; /* Light background for contrast */
+  border-right: 1px solid #ccc; /* Right border */
+  padding: 20px; /* Padding for the sidebar */
+  overflow-y: auto; /* Scroll if content is too long */
+}
+
+.sidebar h2 {
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.sidebar li {
+  margin: 10px 0; /* Spacing between list items */
+}
+
+.sidebar a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Link color */
+}
+
+.sidebar a.active {
+  font-weight: bold; /* Highlight active chapter */
+  color: blue; /* Active link color */
+}
+
+.content {
+  margin-left: 220px; /* Leave space for the sidebar */
+  padding: 20px; /* Padding for the content area */
+}
+
+.section {
+  height: 100vh; /* Each section takes up the full viewport height */
+  padding: 20px; /* Padding inside each section */
+  border-bottom: 1px solid #ccc; /* Border between sections */
+}
